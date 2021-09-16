@@ -1,0 +1,437 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.caps{
+  text-transform: uppercase;
+}
+ 
+ /* Nav */
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  padding: 8px 100px 8px 100px; 
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: rgb(233, 69, 82);
+  font-weight: bold;
+  padding: 10px 10px 10px 75px;  
+}
+
+.nav > .nav-btn {
+  display: none;
+  color:block;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-logo {
+  display: inline;
+  float: left;
+  font-size: 18px;
+  position: absolute;
+}
+
+.nav > .nav-logo > .logo{ 
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;  
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none; 
+  font-weight: 450;
+  color:black;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+.nav { 
+  height: 50px;
+  padding: 8px 10px 8px 10px; 
+}
+
+  .nav > .nav-logo > .logo{ 
+  height: 50px;
+  width: 50px;  
+}
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color:block;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: #ffe8e8f3;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid rgb(26, 16, 16);
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: rgb(255, 248, 248);
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+ }
+
+
+/* ========= row col =============== */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.section-form{
+  padding:20px 90px 20px 90px;
+}
+.bg{
+  height: 490px;
+}
+.left{float:left;}
+.right{float:right;}
+.pt-10{padding-top:10px}
+.p-15{padding:15px;}  
+.py-30{padding:30px 0 30px 0;}
+.our-recipe-title{padding-left: 92px; font-weight: 500}
+@media (max-width:600px) { 
+.bg{
+  height: 490px;
+}
+.pt-10{padding-top:1px}
+.p-15{padding:1px;}
+.py-30{padding:7px 0 7px 0;}
+.section-form{
+  padding:2px 9px 2px 9px;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px; 
+}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12 {width: 100%;}
+}
+
+/* ================================ */
+.title{
+font-size:36px;
+margin-top: -5px;
+}
+.returnToTop{ 
+ color:#f12424f3;
+ padding-left: 85px;
+ }
+.footer-title {font-size:18px; font-weight:500};
+.p{margin-top:-6px;font-size: 18px; font-weight:400}; 
+.recipe-button{ 
+  text-align: center; 
+  cursor: pointer;
+  font-size:18px; 
+  font-weight: lighter;
+  border-radius: 4px;
+  background-color:#fff;
+  border: none;
+  padding: 8px 40px; 
+  margin-top: 10px; 
+}
+.recipe-button{ 
+  text-align: center; 
+  cursor: pointer;
+  font-size:18px; 
+  font-weight: lighter;
+  border-radius: 4px;
+  background-color:#fff;
+  border: none;
+  padding: 8px 40px; 
+  margin-top: 10px; 
+}
+.search-recipe-button{   
+  border: none; 
+  text-align: center; 
+  cursor: pointer;
+  font-size:18px; 
+  font-weight: lighter; 
+}
+.remove-button{ 
+  text-align: center; 
+  cursor: pointer;
+  font-size:18px;  
+  border: none;
+  padding: 12px 20px;   
+  margin-top: 42px; 
+}
+.add-button{ 
+  text-align: center;  
+  cursor: pointer;
+  font-size:18px; 
+  font-weight: lighter;
+  border-radius: 4px; 
+  border: 2px solid white; 
+  padding: 8px 20px; 
+  margin-top: 44px; 
+} 
+.btn-center {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sort{
+  margin:1% 7% 1% 7%;
+}
+.sort-up{
+  border-radius: 5px 5px 0 0; 
+}
+.sort-down{
+  border-radius: 5px;
+  margin-top: -5px;
+}
+.hr{
+  border-right: 2px solid white; 
+  margin-right: -15px; 
+}
+
+@media (max-width:600px) {
+  .remove-button{    
+  margin-top: 0px; 
+}
+.add-button{  
+  margin-top: 0px; 
+}  
+}
+/* ============ card ========= */
+ 
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+} 
+
+.card_image img {
+  height: auto; 
+  height: 200px;
+  width:100%;
+  vertical-align: middle;
+}
+ 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: block;
+  padding: 1rem; 
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 25%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+} 
+
+.card_content {
+  padding: 1rem; 
+}
+
+.card_title { 
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card-text {  
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+} 
+.text-right {  
+  float: right;
+} 
+
+/* ============ Form ================== */
+.label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=text],[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+ .container-check {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  font-size: 16px;
+  color:white;
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;  
+}
+ 
+.container-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+ 
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;  
+  border-radius: 15px;
+}
+ 
+.container-check:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+ 
+.container-check input:checked ~ .checkmark {
+  background-color: white;
+}
+ 
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+ 
+.container-check input:checked ~ .checkmark:after {
+  display: block;
+}
+ 
+.container-check .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 5px;
+  height: 12px;
+  border: solid rgb(56, 56, 56);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+select { 
+   border:2px solid black;
+   height:35px;
+   border-radius:2px;
+   padding: 0 1em;
+   cursor: pointer;
+}  
+
+/* ======== color ================= */
+.text-red{ color:rgb(146, 20, 20);}
+.text-white{ color:white;}
+.bg-red{background-color: rgb(209, 43, 43);}
+.bg-red-400{background-color: rgb(187, 53, 53);}
+.bg-gray{background-color: rgb(219, 218, 218)}

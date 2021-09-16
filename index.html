@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<title>The Grilled Prawn</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./assets/css/style.css">
+<!--Font Awesome icon pack-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+<head>
+</head>
+
+<body>
+    <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-logo">
+            <img src="./assets/images/logo.jpg" class="logo">
+        </div>
+        <div class="nav-header">
+            <div class="nav-title"> The Grilled Prawn </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="#">RECIPES</a>
+            <a href="#">DRINKS</a>
+            <a href="#">DECORATIONS</a>
+            <a href="#">ABOUT THE GRILLED PRAWN</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="row pt-10">
+            <div class="col-9 bg" style="background-image:url(./assets/images/bg.jpg)">
+            </div>
+            <div class="col-3 bg-red bg text-white p-15">
+                <p>LATEST RECIPE</p>
+                <h2 class="title">Baked Polenta with Cheese and Mushrooms</h2>
+                <p class="p">Polenta, goat cheese, Italian sausage, and cremini mushrooms. All together this will
+                    make for pretty darn good side dish to a lovely salad. Go for it.</p>
+                <button class="recipe-button">
+                    <span>Go to recipe</span> <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="bg-gray py-30">
+            <h2 class="our-recipe-title">Our Recipes</h2>
+            <div class="sort">
+                <div class="row">
+                    <div class="col-3 bg-red-400 p-15 text-white sort-up">
+                        <span class="left">Filter recipes by</span><span class="right">-</span>
+                    </div>
+                    <div class="col-1 p-15">
+                        Sort by
+                    </div>
+                    <div class="col-5">
+                        <div class="select">
+                            <select>
+                                <option value="1">Newest first</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-3 p-15">
+                        <button class="search-recipe-button bg-gray text-black">
+                            <i class="fas fa-search"></i><span> Search recipe</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row bg-red-400 sort-down">
+                    <div class="col-3 p-15">
+                        <div class="hr">
+                            <p class="text-white">Food type:</p>
+                            <label class="container-check">Appetisers
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container-check">Mains
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container-check">Desserts
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container-check">Special Occasions
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-3 p-15">
+                        <p class="text-white">Nationality:</p>
+                        <label class="container-check">Italian (34)
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-check">French (30)
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-check">Spanish (22)
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-check">Peruvian (3)
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="col-3 p-15">
+                        <br /><br />
+                        <p></p>
+                        <label class="container-check">Chinese (18)
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-check">Indian (13)
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-check">Thai (10)
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-check">Norwegian (4)
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="col-3 p-15">
+                        <br /><br />
+                        <p></p>
+                        <label class="container-check">Polish (2)
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-check">Danish (2)
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-check">Belgian (7)
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container-check">Persian (13)
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <ul class="cards">
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <div class="card-text caps">
+                                    <span class="text-left">5th March 2016</span>
+                                    <span class="text-right">Thai</span>
+                                </div>
+                                <p class="card_title">Thai Yellow Curry Noodles with Shiitake Mushrooms</p>
+                            </div>
+                            <div class="card_image"><img src="./assets/images/recipe1.jpg"></div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <div class="card-text caps">
+                                    <span class="text-left">5th March 2016</span>
+                                    <span class="text-right">Thai</span>
+                                </div>
+                                <p class="card_title">Thai Yellow Curry Noodles with Shiitake Mushrooms</p>
+                            </div>
+                            <div class="card_image"><img src="./assets/images/recipe2.png"></div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <div class="card-text caps">
+                                    <span class="text-left">5th March 2016</span>
+                                    <span class="text-right">Thai</span>
+                                </div>
+                                <p class="card_title">Thai Yellow Curry Noodles with Shiitake Mushrooms</p>
+                            </div>
+                            <div class="card_image"><img src="./assets/images/recipe3.png"></div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <div class="card-text caps">
+                                    <span class="text-left">5th March 2016</span>
+                                    <span class="text-right">Thai</span>
+                                </div>
+                                <p class="card_title">Thai Yellow Curry Noodles with Shiitake Mushrooms</p>
+                            </div>
+                            <div class="card_image"><img src="./assets/images/recipe4.png"></div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <div class="card-text caps">
+                                    <span class="text-left">5th March 2016</span>
+                                    <span class="text-right">Thai</span>
+                                </div>
+                                <p class="card_title">Thai Yellow Curry Noodles with Shiitake Mushrooms</p>
+                            </div>
+                            <div class="card_image"><img src="./assets/images/recipe5.png"></div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <div class="card-text caps">
+                                    <span class="text-left">5th March 2016</span>
+                                    <span class="text-right">Thai</span>
+                                </div>
+                                <p class="card_title">Thai Yellow Curry Noodles with Shiitake Mushrooms</p>
+                            </div>
+                            <div class="card_image"><img src="./assets/images/recipe6.png"></div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <div class="card-text caps">
+                                    <span class="text-left">5th March 2016</span>
+                                    <span class="text-right">Thai</span>
+                                </div>
+                                <p class="card_title">Thai Yellow Curry Noodles with Shiitake Mushrooms</p>
+                            </div>
+                            <div class="card_image"><img src="./assets/images/recipe7.png"></div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <div class="card-text caps">
+                                    <span class="text-left">5th March 2016</span>
+                                    <span class="text-right">Thai</span>
+                                </div>
+                                <p class="card_title">Thai Yellow Curry Noodles with Shiitake Mushrooms</p>
+                            </div>
+                            <div class="card_image"><img src="./assets/images/recipe8.png"></div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <div class="card-text caps">
+                                    <span class="text-left">5th March 2016</span>
+                                    <span class="text-right">Thai</span>
+                                </div>
+                                <p class="card_title">Thai Yellow Curry Noodles with Shiitake Mushrooms</p>
+                            </div>
+                            <div class="card_image"><img src="./assets/images/recipe9.png"></div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <div class="card-text caps">
+                                    <span class="text-left">5th March 2016</span>
+                                    <span class="text-right">Thai</span>
+                                </div>
+                                <p class="card_title">Thai Yellow Curry Noodles with Shiitake Mushrooms</p>
+                            </div>
+                            <div class="card_image"><img src="./assets/images/recipe10.png"></div>
+                        </div>
+                    </li>
+                    <li class="cards_item">
+                        <div class="card">
+                            <div class="card_content">
+                                <div class="card-text caps">
+                                    <span class="text-left">5th March 2016</span>
+                                    <span class="text-right">Thai</span>
+                                </div>
+                                <p class="card_title">Thai Yellow Curry Noodles with Shiitake Mushrooms</p>
+                            </div>
+                            <div class="card_image"><img src="./assets/images/recipe11.png"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <h2 class="returnToTop" onclick='window.scrollTo({top: 0, behavior: "smooth"});'>Return to the top
+                <span><i class="fa fa-angle-up"></i></span>
+            </h2>
+        </section>
+
+        <section class="bg-red text-white section-form">
+            <div>
+                <h2>Spread the word!</h2>
+                <p>Our recipes are awesome, sign up to our newsletter and <br />invite friend to join the Gilled Prawn
+                    cult</p>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <label class="label" for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name.." value="Samantha">
+                </div>
+                <div class="col-3">
+                    <label class="label" for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" placeholder="Surname.." value="Smith">
+                </div>
+                <div class="col-3">
+                    <label class="label" for="email_address">Email address</label>
+                    <input type="email" id="email_address" name="email_address" placeholder="Email address.."
+                        value="Samatha@smith.com">
+                </div>
+                <div class="col-3 btn-center">
+                    <button class="remove-button bg-red text-white">
+                        <i class="fas fa-trash"></i><span> Remove</span>
+                    </button>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-3">
+                    <label class="label" for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name.." value="Samantha">
+                </div>
+                <div class="col-3">
+                    <label class="label" for="surname">Surname</label>
+                    <input type="text" id="surname" name="surname" placeholder="Surname.." value="Smith">
+                </div>
+                <div class="col-3">
+                    <label class="label" for="email_address">Email address</label>
+                    <input type="email" id="email_address" name="email_address" placeholder="Email address.."
+                        value="Samatha@smith.com">
+                </div>
+                <div class="col-3 btn-center">
+                    <button class="add-button bg-red text-white">Add Freind</button>
+                </div>
+            </div>
+            <div class="row btn-center">
+                <button class="recipe-button"><span>Send </span> <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray section-form">
+        <div class="row">
+            <div class="col-2">
+                <h2 class="footer-title">Our Recipes</h2>
+                <p class="p">The Grilled Prawn is a fictional food blog created in January 2015</p>
+            </div>
+            <div class="col-2">
+                <h2 class="footer-title">Grilled Praw's History</h2>
+                <p class="p">The Grilled Prawn is a fictional food blog created in January 2015</p>
+            </div>
+            <div class="col-2">
+                <h2 class="footer-title">Tips and Tricks</h2>
+                <p class="p">The Grilled Prawn is a fictional food blog created in January 2015</p>
+            </div>
+            <div class="col-2">
+                <h2 class="footer-title">Help and Contact</h2>
+                <p class="p">The Grilled Prawn is a fictional food blog created in January 2015</p>
+            </div>
+            <div class="col-3">
+                <p class="p">@The Grilled Prawn<br />The Grilled Prawn is a fictional food blog created in January 2015
+                    The Grilled Prawn is a fictional food blog created in January 2015</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
